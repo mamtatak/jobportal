@@ -1,0 +1,42 @@
+<html>
+<head>
+<strong>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-theme.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/sigin.css') }}">
+
+
+<header>
+<div class="container"
+<h1 class="logo">Freshers World</h1>
+      <div class="menu">
+
+ <strong><nav>
+      <ul class="menu">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('login') }}">Register</a></li>
+        <li><a href="{{ url_for('login1') }}">login1</a></li>
+        <li><a href="{{ url_for('browse') }}">browse</a></li>
+
+</header>
+    </nav></strong>
+  </div>
+
+<div class="jumbotron">
+
+<form>
+    <h3><li><a href="{{ url_for('login1') }}">Add new record</a></li><h3>
+	<h3><li><a href="{{ url_for('list') }}">Show list</a></li><h3>
+<footer class="footer">
+        <p>&copy; Company 2015</p>
+      </footer>
+</form>
+    </div>
+</body>
+</html>
+
+  
+
+
