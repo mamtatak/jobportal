@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Freshers World</title>
+<html>
+<head>
+<strong>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-theme.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/sigin.css') }}">
+
+
+<header>
+<div class="container"
+<h1 class="logo">Freshers World</h1>
+      <div class="menu">
+
+ <strong><nav>
+      <ul class="menu">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('login') }}">Register</a></li>
+        <li><a href="{{ url_for('login1') }}">login1</a></li>
+        <li><a href="{{ url_for('browse') }}">browse</a></li>
+
+</header>
+    </nav></strong>
+  </div>
+
+ 
+    
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/signup.css" rel="stylesheet">
+    
+  </head>
+ 
+  <body>
+ 
+   
+<form action = "{{ url_for('addrec') }}" method = "POST">
+</form>
+         
+      
+ 
+      <div class="jumbotron">
+        <h2>REGISTERATION</h2>
+        <form class="form-signin">
+Name
+        <label for="inputName" class="sr-only">Name</label>
+        <input type="name" name="inputName" id="inputName" >
+<br>
+<br>
+Address
+<textarea name = "add" ></textarea>
+<br>
+<br>
+
+ Pincode
+<label for="pincode" class="sr-only">Pincode</label>
+        <input type="name" name="pincode" id="pincode" >
+
+<br>
+<br>
+Contact
+<label for="contact" class="sr-only">contact</label>
+        <input type="contact" name="contact" id="contact" >
+<br>
+<br>
+
+Gender
+<select>
+  <option value="Male">male</option>
+  <option value="Female">female</option>
+  <option value="Other">other</option>
+</select>
+<br>
+<br>
+ 
+Country
+<select>
+  <option value="Select Country">Select Country</option>
+  <option value="India">India</option>
+  <option value="USA">USA</option>
+  <option value="UK">UK</option>
+ 
+</select>
+<br>
+<br>
+
+
+City
+<select>
+<option value="select City">Select City</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Pune">Pune</option>
+<option value="Nasik">Nasik</option>
+<option value="Kolhapur">kolhapur</option>
+<option value="Benglor">Benglor</option>
+<option value="Delhi">Delhi</option>
+<option value="Kerla">Kerla</option>
+<option value="Other">Other</option>
+
+</select>
+<br>
+<br>
+      
+
+Course
+<select>
+    <option value="Select Course">Select Course</option>
+    <option value="BscIt">BSC.IT</option>
+    <option value="Bca">BCA</option>
+    <option value="Bcom">B.COM</option>
+    <option value="MBA">MBA</option>
+   
+
+</select>
+<br>
+<br>
+ 
+Institute
+<select>
+    <option value="Select Institute">Select Institute</option>
+    <option value="SNDT University">SNDT University</option> 
+    <option value="Mumbai UNiversity">Mumbai University</option>
+   
+</select>
+<br>
+<br>     
+          <input type ="submit" value="submit">Sign up</button>
+      </form>
+      </div>
+ 
+       
+ 
+      <footer class="footer">
+        <p>&copy; Company 2017</p>
+      </footer>
+ 
+    </div>
+  </body>
+</html>
