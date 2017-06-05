@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+   <body>
+   
+      <table border = 1>
+         <thead>
+            <td>Name</td>
+            <td>Address</td>
+            <td>Pincode</td>
+            <td>contact</td>
+            <td>Gender</td>
+            <td>country</td>
+            <td>city</td>
+            <td>course</td>
+            <td>Institute</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["name"]}}</td>
+               <td>{{row["addr"]}}</td>
+               <td>{{row["con"]}}</td>
+               <td>{{row["gen"]}}</td>	
+               <td>{{row["country"]}}</td>
+               <td>{{row["city"]}}</td>
+               <td>{{row["course"]}}</td>	
+               <td>{{row["Institute"]}}</td>			
+
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <a href = "/">Go back to home page</a>
+      
+   </body>
+</html>
